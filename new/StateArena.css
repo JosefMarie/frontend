@@ -1,0 +1,88 @@
+.arena-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  text-align: center;
+}
+
+.arena-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Base Card Styling */
+.state-card {
+  padding: 1.5rem;
+  border: 2px solid;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.state-card:hover {
+  transform: translateY(-2px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.card-count {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #0f172a;
+}
+
+/* Base Button Styling */
+.btn-action {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.btn-action:hover {
+  opacity: 0.8;
+}
+
+/* Zustand Theme (Blue) */
+.card-zustand { border-color: #3b82f6; }
+.card-zustand .card-title { color: #2563eb; }
+.card-zustand .btn-action { background-color: #dbeafe; color: #1d4ed8; }
+
+/* Context API Theme (Green) */
+.card-context { border-color: #22c55e; }
+.card-context .card-title { color: #16a34a; }
+.card-context .btn-action { background-color: #dcfce7; color: #15803d; }
+
+/* Redux Theme (Purple) */
+.card-redux { border-color: #a855f7; }
+.card-redux .card-title { color: #9333ea; }
+.card-redux .btn-action { background-color: #f3e8ff; color: #7e22ce; }
+
+/* MobX Theme (Orange) */
+.card-mobx { border-color: #f97316; }
+.card-mobx .card-title { color: #ea580c; }
+.card-mobx .btn-action { background-color: #ffedd5; color: #c2410c; }
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
