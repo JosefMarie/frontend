@@ -1,0 +1,188 @@
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #0f172a;
+  border-radius: 12px;
+  color: #e2e8f0;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #38bdf8;
+  border-bottom: 2px solid #1e293b;
+  padding-bottom: 1rem;
+}
+
+.dev-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  color: #f8fafc;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+/* Focus Event Styles */
+.active-focus {
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+  outline: none;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+}
+.checkbox-group input {
+  margin-right: 0.75rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: #334155;
+  margin: 0.5rem 0;
+}
+
+.flex-row {
+  display: flex;
+  gap: 0.5rem;
+}
+.flex-row input {
+  flex: 1;
+}
+
+.btn-add {
+  background-color: #0284c7;
+  color: white;
+  border: none;
+  padding: 0 1.25rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.debounce-log {
+  font-size: 0.75rem;
+  color: #8b5cf6;
+  font-family: monospace;
+}
+
+/* Dynamic List Styles */
+.dynamic-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dynamic-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #10b981;
+}
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btn-delete:hover {
+  background-color: #b91c1c;
+}
+
+/* Scroll Box Styles */
+.scroll-box {
+  height: 150px;
+  overflow-y: auto;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+.scroll-progress {
+  font-size: 0.75rem;
+  color: #10b981;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Bubbling Container Styles */
+.bubbling-container {
+  background-color: #334155;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px dashed #64748b;
+  cursor: pointer;
+}
+.btn-secure {
+  background-color: #f59e0b;
+  color: #0f172a;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Final Submit Styles */
+.btn-submit {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+.hover-glow {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.6);
+  transform: translateY(-2px);
+}
